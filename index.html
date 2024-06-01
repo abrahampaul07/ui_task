@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Template</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg" style="height: 72px">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./logo-S2lIhR8K.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-light bg-white navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <div class="navbar-center">
+            <form class="d-flex my-2 my-lg-0 rounded form">
+              <input
+                class="form-control me-2 search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <span class="d-flex gap-2">
+                Create account
+                <span
+                  ><a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#createAccountModal"
+                    >It's free!</a
+                  ></span
+                >
+                <div class="dropdown">
+                  <button
+                    class="btn py-0 dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></button>
+                  <ul class="dropdown-menu" style="margin-left: -120px">
+                    <li>
+                      <a class="dropdown-item" href="./index1.html">Max</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Somthing else</a></li>
+                  </ul>
+                </div>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Create Account Modal -->
+    <div
+      class="modal fade"
+      id="createAccountModal"
+      tabindex="-1"
+      aria-labelledby="createAccountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-header d-flex justify-content-center align-items-center"
+            style="background-color: #effff4"
+          >
+            <h5 style="font-size: 14px">
+              Let's learn, share & inspire each other with our passion for
+              computer engineering. Sign up now 🤘🏼
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="login-model d-flex gap-5 justify-content-between">
+              <div class="cont1" style="width: 100%">
+                <h2>Create Account</h2>
+                <div>
+                  <form>
+                    <div class="d-flex">
+                      <div class="mb-0">
+                        <input
+                          type="text"
+                          placeholder="First Name"
+                          class="form-control"
+                          id="username"
+                          required
+                        />
+                      </div>
+                      <div class="mb-0">
+                        <input
+                          type="text"
+                          placeholder="Last Name"
+                          class="form-control"
+                          id="username"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-0">
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-0">
+                      <input
+                        type="password"
+                        placeholder="Password"
+                        class="form-control"
+                        id="password"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        class="form-control"
+                        id="password"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100 rounded-pill"
+                    >
+                      Create Account
+                    </button>
+                  </form>
+                </div>
+
+                <div class="my-3">
+                  <button class="my-3 w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                    <i class="fa-brands fa-facebook"></i> Sign up with Facebook
+                  </button>
+                  <br />
+                  <button class="w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                    <i class="fa-brands fa-google"></i> Sign up with Google
+                  </button>
+                </div>
+              </div>
+
+              <div class="cont2" style="width: 100%">
+                <span class="text-end" style="font-size: 13px"
+                  >Already have an account?
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#signInAccountModal"
+                    >Sign In</a
+                  ></span
+                >
+                <img
+                  src="https://cdni.iconscout.com/illustration/premium/thumb/create-account-6333606-5230166.png?f=webp"
+                  alt=""
+                  style="width: 320px; height: 320px"
+                />
+                <span style="font-size: 11px; color: grey"
+                  >By signing up, you agree to our Terms & conditions, Privacy
+                  policy</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div
+      class="modal fade"
+      id="signInAccountModal"
+      tabindex="-1"
+      aria-labelledby="createAccountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-header d-flex justify-content-center align-items-center"
+            style="background-color: #effff4"
+          >
+            <h5 style="font-size: 14px">
+              Let's learn, share & inspire each other with our passion for
+              computer engineering. Sign up now 🤘🏼
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="register-model d-flex gap-5 justify-content-between">
+              <div class="cont1" style="width: 100%">
+                <h2>Sign In</h2>
+                <div>
+                  <form>
+                    <div class="mb-0">
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="form-control"
+                        id="email"
+                        
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="password"
+                        placeholder="Password"
+                        class="form-control"
+                        id="password"
+                        
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100 rounded-pill"
+                    >
+                      <a href="./index1.html" style="text-decoration: none; color: white;">Sign In</a>
+                    </button>
+                  </form>
+                </div>
+
+                <div class="my-3">
+                  <button class="my-3 w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                    <i class="fa-brands fa-facebook"></i> Sign up with Facebook
+                  </button>
+                  <br />
+                  <button class="w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                    <i class="fa-brands fa-google"></i> Sign up with Google
+                  </button>
+
+                  <p class="text-black text-center my-3" style="font-size: 12px;">Forgot Password?</p>
+                </div>
+              </div>
+
+              <div class="cont2" style="width: 100%">
+                <span class="text-end" style="font-size: 13px"
+                  >Don’t have an account yet?
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#createAccountModal"
+                    >Create new for free!</a
+                  ></span
+                >
+                <img
+                  src="https://cdni.iconscout.com/illustration/premium/thumb/create-account-6333606-5230166.png?f=webp"
+                  alt=""
+                  style="width: 320px; height: 320px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Modal ends -->
+
+    <!-- Navbar ends -->
+
+    <!-- Hero section starts -->
+
+    <div class="hero-container">
+      <!-- <img src="https://media.istockphoto.com/id/1361595256/photo/front-view-of-a-workspace-modern-computer-blank-mockup-screen.jpg?s=1024x1024&w=is&k=20&c=rQRjuB-T-qKlKKYTC9B1APGpmgi6rPw7PXGGg7mVL9Y=" alt=""> -->
+      <!-- <div> -->
+      <div class="text-container">
+        <h5>Computer Engineering</h5>
+        <p>142,34 follows</p>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- Hero section ends -->
+
+    <!-- Main container starts -->
+
+    <section class="section-container">
+      <div class="post">
+        <div
+          class="main-container p-4 d-flex align-items-center justify-content-between"
+        >
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-black active" aria-current="page" href="#"
+                >All Post(32)</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Job</a>
+            </li>
+          </ul>
+
+          <div class="sub-container p-4">
+            <button class="border-0 me-2">
+              Write a Post<i
+                class="fa-solid fa-caret-down"
+                style="margin: 10px"
+              ></i>
+            </button>
+            <button class="border-0">
+              <i class="fa-solid fa-user" style="margin: 10px"></i>Join Group
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr style="margin-top: -20px" />
+
+      <div class="postt container my-5">
+        <h2>Posts(69)</h2>
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="border: 1px solid grey"
+          >
+            Filter: All
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex gap-5">
+        <div>
+          <div class="data-container">
+            <div class="card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C0fYjHaCk5hf1GBMyP9PyrBoUp1EFCVsbSe8L1P6-Fe65JcY4lHSvtsCchQp5Kebjk4HaXRhDkif5LiS2fcsXgxaPeIT6EHmZ8X2QxuXToKhTmndvXlDvydh8iTDsJweNKt1YCuPfzNeHOKpYDZhZr4dWHhyjusEt0M1r28DbMK1a2Nj-PSMc0uJZqAFUZO9ZK1fRCiBajT1tcaiGfM8K5OL4h7LhBw9NBAm6tWkakIz8o4lo6IJoyapOEgb9Qu0MffFPCWVNyikyw0BwQoZwBT-c4TtoON~sEPUQH9CvhGZKn7jw69Nh~C0yGpOZLYV3Wd5BB7EpDOBt3VSXZoMpA__"
+                style="height: 220px"
+                alt="image"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-black">✍️ Article</p>
+                <h6>
+                  What if famous brands had regular fonts? Meet RegulaBrands!
+                </h6>
+                <p class="text-black">
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
+                </p>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Sarthak Kamra
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-container my-3">
+            <div class="card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NZoIUrwa-EeiW9X5w~qBgv0oi6n1L8SNUxxL-bFq3eMZqt7rdBBZ8xYyhcVKMRYS-TMmRArfmys54NZSqgma~zEL1yGiQFDFfwfJBj0p3VdT91BNmU8RQNR2Jzs8-akaKQHKNlQcy~LTlLcZ-ZlhaMWShnDNZRbg17ZipJsw77a--jsT9WdFLpvOS53mmRcEq42ZtJBels2V~tYnABTiNEFdO0hr6dgcIr9V8YLWXQm2NiJH5ak29iIS9~b91-i8ETf4EeZ1khMMx74DglFltczAWGZiKHYV8UP9lBMDjUAYcKGJThlFqKYxAY7-CSAFs9Gh4umTlWVrP9g4Rkx6tQ__"
+                style="height: 220px"
+                alt="image"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-black">🔬️ Education</p>
+                <h6>
+                  Tax Benefits for Investment under National Pension Scheme
+                  launched by Government
+                </h6>
+                <p class="text-black">
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
+                </p>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Sarah West
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-container my-3">
+            <div class="card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/bdc0/79a9/a2e530610a1b91c9682ba7889c87c1b2?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O5n7fdVi3TViL1VbnJZ94AP6dSM8P0zBe32FZdbQEtQsS1nbLg44ls62Zf0gbU8vdrzlBVHWSSwJuWAeaxNTGdmbGbYXO5trLJyBxvzMXoB1GBx0peo5ddKfnklIgQK5j3wo~S-7YxXNc-FBNBsGB97F5t0onZwdu2F81WJ2CavSH35LbdGq~FW7mmeVg2mJPzlyFHZZGZmoswhfY2yEtMAlzXhb3egPbeInGYLvSXugrQwPnmt-7BFoav~Neu~6yQs41QKQjexZRLCi5p4jRgVzNHWjPFLHQr1aAiW-zkLP0GT9VK8e7muAzNOLKQMgwcK7AcOzsxeB0TjmVCVeeA__"
+                style="height: 220px"
+                alt="image"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-black">🗓️ Meetup</p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6>Finance & Investment Elite Social Mixer @Lujiazui</h6>
+                  <div
+                    class="dropdown"
+                    style="background-color: lightgrey; border-radius: 5px"
+                  >
+                    <button
+                      class="btn"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <span
+                    ><i class="fa-solid fa-calendar-days"></i>&nbsp;Fri, 12 Oct,
+                    2018</span
+                  >
+                  <span style="margin-left: 20px"
+                    ><i class="fa-solid fa-location-dot"></i>&nbsp;Ahmedabad,
+                    India</span
+                  >
+                </div>
+
+                <button
+                  style="
+                    border: 1px solid grey;
+                    width: 100%;
+                    height: 38px;
+                    background-color: #ffff;
+                    color: red;
+                    margin-top: 10px;
+                    font-size: 13px;
+                  "
+                >
+                  Visit Website
+                </button>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Ronal Jones
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-container my-3">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-black">💼️ Job</p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6>Software Developer</h6>
+                  <div
+                    class="dropdown"
+                    style="background-color: lightgrey; border-radius: 5px"
+                  >
+                    <button
+                      class="btn"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <span
+                    ><i class="fa-solid fa-suitcase"></i>&nbsp;Innovaccer
+                    Analytics Private Ltd.</span
+                  >
+                  <span style="margin-left: 20px"
+                    ><i class="fa-solid fa-location-dot"></i>&nbsp;Noida,
+                    India</span
+                  >
+                </div>
+
+                <button
+                  style="
+                    border: 1px solid grey;
+                    width: 100%;
+                    height: 38px;
+                    background-color: #ffff;
+                    color: red;
+                    margin-top: 10px;
+                    font-size: 13px;
+                  "
+                >
+                  Visit Website
+                </button>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Joseph Gray
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location">
+          <div class="d-flex justify-content-between">
+            <span
+              ><i class="fa-solid fa-location-dot"></i>&nbsp;Noida, India</span
+            >
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+          <hr />
+          <span style="font-size: 12px; color: gray"
+            ><i class="fa-solid fa-circle-exclamation"></i> Your location will
+            help us serve better and extend a personalised experience.</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Main container ends -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

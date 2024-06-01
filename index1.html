@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Template</title>
+  </head>
+  <body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg px-5" style="height: 72px">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./logo-S2lIhR8K.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <div class="navbar-center">
+            <form class="d-flex my-2 my-lg-0 rounded form">
+              <input
+                class="form-control me-2"
+                style="min-width: 500px"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <span>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-user-secret"></i> Max
+                  </button>
+                  <ul class="dropdown-menu" style="margin-left: -70px;">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Logout</a></li>
+                  </ul>
+                </div>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar ends -->
+
+    <!-- Hero section starts -->
+
+    <div class="hero-container">
+      <!-- <img src="https://media.istockphoto.com/id/1361595256/photo/front-view-of-a-workspace-modern-computer-blank-mockup-screen.jpg?s=1024x1024&w=is&k=20&c=rQRjuB-T-qKlKKYTC9B1APGpmgi6rPw7PXGGg7mVL9Y=" alt=""> -->
+      <!-- <div> -->
+      <div class="text-container">
+        <h5>Computer Engineering</h5>
+        <p>142,34 follows</p>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- Hero section ends -->
+
+    <!-- Main container starts -->
+
+    <section class="container">
+      <div class="post">
+        <div
+          class="main-container p-4 d-flex align-items-center justify-content-between"
+        >
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-black active" aria-current="page" href="#"
+                >All Post(32)</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Job</a>
+            </li>
+          </ul>
+
+          <div class="sub-container p-4">
+            <button class="border-0 me-2">
+              Write a Post<i
+                class="fa-solid fa-caret-down"
+                style="margin: 10px"
+              ></i>
+            </button>
+            <button class="border-0">
+              <i class="fa-solid fa-right-from-bracket" style="margin: 10px"></i
+              >Leave Group
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <hr style="margin-top: -20px" />
+
+      <div class="postt my-5">
+        <h2>Posts(69)</h2>
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="border: 1px solid grey"
+          >
+            Filter: All
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex gap-5">
+        <div>
+          <div class="data-container container">
+            <div class="card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C0fYjHaCk5hf1GBMyP9PyrBoUp1EFCVsbSe8L1P6-Fe65JcY4lHSvtsCchQp5Kebjk4HaXRhDkif5LiS2fcsXgxaPeIT6EHmZ8X2QxuXToKhTmndvXlDvydh8iTDsJweNKt1YCuPfzNeHOKpYDZhZr4dWHhyjusEt0M1r28DbMK1a2Nj-PSMc0uJZqAFUZO9ZK1fRCiBajT1tcaiGfM8K5OL4h7LhBw9NBAm6tWkakIz8o4lo6IJoyapOEgb9Qu0MffFPCWVNyikyw0BwQoZwBT-c4TtoON~sEPUQH9CvhGZKn7jw69Nh~C0yGpOZLYV3Wd5BB7EpDOBt3VSXZoMpA__"
+                style="height: 220px"
+                alt="image"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-black">✍️ Article</p>
+                <h6>
+                  What if famous brands had regular fonts? Meet RegulaBrands!
+                </h6>
+                <p class="text-black">
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
+                </p>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Sarthak Kamra
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-container container my-3">
+            <div class="card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NZoIUrwa-EeiW9X5w~qBgv0oi6n1L8SNUxxL-bFq3eMZqt7rdBBZ8xYyhcVKMRYS-TMmRArfmys54NZSqgma~zEL1yGiQFDFfwfJBj0p3VdT91BNmU8RQNR2Jzs8-akaKQHKNlQcy~LTlLcZ-ZlhaMWShnDNZRbg17ZipJsw77a--jsT9WdFLpvOS53mmRcEq42ZtJBels2V~tYnABTiNEFdO0hr6dgcIr9V8YLWXQm2NiJH5ak29iIS9~b91-i8ETf4EeZ1khMMx74DglFltczAWGZiKHYV8UP9lBMDjUAYcKGJThlFqKYxAY7-CSAFs9Gh4umTlWVrP9g4Rkx6tQ__"
+                style="height: 220px"
+                alt="image"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-black">🔬️ Education</p>
+                <h6>
+                  Tax Benefits for Investment under National Pension Scheme
+                  launched by Government
+                </h6>
+                <p class="text-black">
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
+                </p>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Sarah West
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-container container my-3">
+            <div class="card">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/bdc0/79a9/a2e530610a1b91c9682ba7889c87c1b2?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O5n7fdVi3TViL1VbnJZ94AP6dSM8P0zBe32FZdbQEtQsS1nbLg44ls62Zf0gbU8vdrzlBVHWSSwJuWAeaxNTGdmbGbYXO5trLJyBxvzMXoB1GBx0peo5ddKfnklIgQK5j3wo~S-7YxXNc-FBNBsGB97F5t0onZwdu2F81WJ2CavSH35LbdGq~FW7mmeVg2mJPzlyFHZZGZmoswhfY2yEtMAlzXhb3egPbeInGYLvSXugrQwPnmt-7BFoav~Neu~6yQs41QKQjexZRLCi5p4jRgVzNHWjPFLHQr1aAiW-zkLP0GT9VK8e7muAzNOLKQMgwcK7AcOzsxeB0TjmVCVeeA__"
+                style="height: 220px"
+                alt="image"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-black">🗓️ Meetup</p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6>Finance & Investment Elite Social Mixer @Lujiazui</h6>
+                  <div
+                    class="dropdown"
+                    style="background-color: lightgrey; border-radius: 5px"
+                  >
+                    <button
+                      class="btn"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <span
+                    ><i class="fa-solid fa-calendar-days"></i>&nbsp;Fri, 12 Oct,
+                    2018</span
+                  >
+                  <span style="margin-left: 20px"
+                    ><i class="fa-solid fa-location-dot"></i>&nbsp;Ahmedabad,
+                    India</span
+                  >
+                </div>
+
+                <button
+                  style="
+                    border: 1px solid grey;
+                    width: 100%;
+                    height: 38px;
+                    background-color: #ffff;
+                    color: red;
+                    margin-top: 10px;
+                    font-size: 13px;
+                  "
+                >
+                  Visit Website
+                </button>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Ronal Jones
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="data-container container my-3">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-black">💼️ Job</p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6>Software Developer</h6>
+                  <div
+                    class="dropdown"
+                    style="background-color: lightgrey; border-radius: 5px"
+                  >
+                    <button
+                      class="btn"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <span
+                    ><i class="fa-solid fa-suitcase"></i>&nbsp;Innovaccer
+                    Analytics Private Ltd.</span
+                  >
+                  <span style="margin-left: 20px"
+                    ><i class="fa-solid fa-location-dot"></i>&nbsp;Noida,
+                    India</span
+                  >
+                </div>
+
+                <button
+                  style="
+                    border: 1px solid grey;
+                    width: 100%;
+                    height: 38px;
+                    background-color: #ffff;
+                    color: red;
+                    margin-top: 10px;
+                    font-size: 13px;
+                  "
+                >
+                  Visit Website
+                </button>
+              </div>
+
+              <div class="image-cont">
+                <div>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    style="width: 48px; height: 48px"
+                    alt=""
+                  />
+                  Joseph Gray
+                </div>
+                <div class="d-flex pe-3 align-items-center">
+                  <p class="text-black">
+                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location">
+          <div>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Location"
+                aria-label="location"
+                aria-describedby="addon-wrapping"
+                style="outline: none"
+              />
+            </div>
+          </div>
+          <hr />
+          <span style="font-size: 12px; color: gray"
+            ><i class="fa-solid fa-circle-exclamation"></i> Your location will
+            help us serve better and extend a personalised experience.</span
+          >
+
+          <div class="container users">
+            <h5>
+              <i class="fa-regular fa-thumbs-up mb-3"></i>&nbsp; RECOMMENDED GROUPS
+            </h5>
+            <div class="d-flex justify-content-between">
+              <div class="profile">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK8JBhdhgOGoWY1rBaJ71uneRkZ5dP8ZJR4Q&s"
+                  alt=""
+                  style="width: 36px; height: 36px; border-radius: 100%"
+                />&nbsp; <span style="font-size: 14px">Leisure</span>
+              </div>
+              <button
+                style="
+                  border: none;
+                  border-radius: 20px;
+                  height: 24px;
+                  width: 60px;
+                  font-size: 12px;
+                "
+              >
+                Follow
+              </button>
+            </div>
+            <div class="d-flex justify-content-between my-4">
+              <div class="profile">
+                <!-- <i class="fa-solid fa-user-secret"></i>&nbsp; <span style="font-size: 14px;">Activism</span>  -->
+                <img
+                  src="https://commonslibrary.org/wp-content/uploads/lcn-5.jpg"
+                  alt=""
+                  style="width: 36px; height: 36px; border-radius: 100%"
+                />&nbsp; <span style="font-size: 14px">Activism</span>
+              </div>
+              <button
+                style="
+                  border: none;
+                  border-radius: 20px;
+                  height: 24px;
+                  width: 60px;
+                  font-size: 12px;
+                "
+              >
+                Follow
+              </button>
+            </div>
+            <div class="d-flex justify-content-between my-4">
+              <div class="profile">
+                <!-- <i class="fa-solid fa-user-secret"></i>&nbsp; <span style="font-size: 14px;">MBA</span>  -->
+                <img
+                  src="https://www.insidehighered.com/sites/default/files/styles/max_650x650/public/media/GettyImages-1271093884%281%29.jpg?itok=XRu4ebz-"
+                  alt=""
+                  style="width: 36px; height: 36px; border-radius: 100%"
+                />&nbsp; <span style="font-size: 14px">MBA</span>
+              </div>
+              <button
+                style="
+                  border: none;
+                  border-radius: 20px;
+                  height: 24px;
+                  width: 60px;
+                  font-size: 12px;
+                "
+              >
+                Follow
+              </button>
+            </div>
+            <div class="d-flex justify-content-between my-4">
+              <div class="profile">
+                <!-- <i class="fa-solid fa-user-secret"></i>&nbsp; <span style="font-size: 14px;">Philosophy</span>  -->
+                <img
+                  src="https://miro.medium.com/v2/resize:fit:938/1*ARpXbGZtzKkHbojQkawQKQ.jpeg"
+                  alt=""
+                  style="width: 36px; height: 36px; border-radius: 100%"
+                />&nbsp; <span style="font-size: 14px">Philosophy</span>
+              </div>
+              <button
+                style="
+                  border: none;
+                  border-radius: 20px;
+                  height: 24px;
+                  width: 60px;
+                  font-size: 12px;
+                "
+              >
+                Follow
+              </button>
+            </div>
+
+            <div>
+              <a style="text-decoration: none;" href="">See More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main container ends -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
