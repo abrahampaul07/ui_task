@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Navbar starts -->
-    <nav class="navbar navbar-expand-lg px-5" style="height: 72px">
+    <!-- <nav class="navbar navbar-expand-lg px-5" style="height: 72px">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="./logo-S2lIhR8K.svg" alt=""
@@ -37,13 +37,12 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="collapse navbar-light bg-white navbar-collapse" id="navbarContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <div class="navbar-center">
             <form class="d-flex my-2 my-lg-0 rounded form">
               <input
-                class="form-control me-2"
-                style="min-width: 500px"
+                class="form-control me-2 search"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -72,8 +71,65 @@
           </ul>
         </div>
       </div>
+    </nav> -->
+
+
+    <nav class="navbar navbar-expand-lg" style="height: 72px">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./logo-S2lIhR8K.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-light bg-white navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <div class="navbar-center">
+            <form class="d-flex my-2 my-lg-0 rounded form">
+              <input
+                class="form-control me-2 search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <span class="user">
+                <div class="dropdown">
+                  <button
+                    class="btn py-0 dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ><i class="fa-solid fa-user-secret"></i> Max</button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">Profile</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./index.html">Logout</a>
+                    </li>
+                  </ul>
+                </div>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
+    
+   
     <!-- Navbar ends -->
 
     <!-- Hero section starts -->
@@ -92,7 +148,7 @@
 
     <!-- Main container starts -->
 
-    <section class="container">
+    <section class="section-container">
       <div class="post">
         <div
           class="main-container p-4 d-flex align-items-center justify-content-between"
@@ -134,7 +190,7 @@
 
       <hr style="margin-top: -20px" />
 
-      <div class="postt my-5">
+      <div class="postt container my-5">
         <h2>Posts(69)</h2>
         <div class="dropdown">
           <button
@@ -142,7 +198,7 @@
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style="border: 1px solid grey"
+            style="border: 1px solid #EDEEF0; background-color: #EDEEF0;"
           >
             Filter: All
           </button>
@@ -156,7 +212,7 @@
 
       <div class="d-flex gap-5">
         <div>
-          <div class="data-container container">
+          <div class="data-container">
             <div class="card">
               <img
                 src="https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C0fYjHaCk5hf1GBMyP9PyrBoUp1EFCVsbSe8L1P6-Fe65JcY4lHSvtsCchQp5Kebjk4HaXRhDkif5LiS2fcsXgxaPeIT6EHmZ8X2QxuXToKhTmndvXlDvydh8iTDsJweNKt1YCuPfzNeHOKpYDZhZr4dWHhyjusEt0M1r28DbMK1a2Nj-PSMc0uJZqAFUZO9ZK1fRCiBajT1tcaiGfM8K5OL4h7LhBw9NBAm6tWkakIz8o4lo6IJoyapOEgb9Qu0MffFPCWVNyikyw0BwQoZwBT-c4TtoON~sEPUQH9CvhGZKn7jw69Nh~C0yGpOZLYV3Wd5BB7EpDOBt3VSXZoMpA__"
@@ -177,7 +233,7 @@
               </div>
 
               <div class="image-cont">
-                <div>
+                <div class="pb-3">
                   <img
                     src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
                     style="width: 48px; height: 48px"
@@ -187,15 +243,16 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="data-container container my-3">
+          <div class="data-container my-3">
             <div class="card">
               <img
                 src="https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NZoIUrwa-EeiW9X5w~qBgv0oi6n1L8SNUxxL-bFq3eMZqt7rdBBZ8xYyhcVKMRYS-TMmRArfmys54NZSqgma~zEL1yGiQFDFfwfJBj0p3VdT91BNmU8RQNR2Jzs8-akaKQHKNlQcy~LTlLcZ-ZlhaMWShnDNZRbg17ZipJsw77a--jsT9WdFLpvOS53mmRcEq42ZtJBels2V~tYnABTiNEFdO0hr6dgcIr9V8YLWXQm2NiJH5ak29iIS9~b91-i8ETf4EeZ1khMMx74DglFltczAWGZiKHYV8UP9lBMDjUAYcKGJThlFqKYxAY7-CSAFs9Gh4umTlWVrP9g4Rkx6tQ__"
@@ -217,7 +274,7 @@
               </div>
 
               <div class="image-cont">
-                <div>
+                <div class="pb-3">
                   <img
                     src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
                     style="width: 48px; height: 48px"
@@ -227,15 +284,16 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="data-container container my-3">
+          <div class="data-container my-3">
             <div class="card">
               <img
                 src="https://s3-alpha-sig.figma.com/img/bdc0/79a9/a2e530610a1b91c9682ba7889c87c1b2?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O5n7fdVi3TViL1VbnJZ94AP6dSM8P0zBe32FZdbQEtQsS1nbLg44ls62Zf0gbU8vdrzlBVHWSSwJuWAeaxNTGdmbGbYXO5trLJyBxvzMXoB1GBx0peo5ddKfnklIgQK5j3wo~S-7YxXNc-FBNBsGB97F5t0onZwdu2F81WJ2CavSH35LbdGq~FW7mmeVg2mJPzlyFHZZGZmoswhfY2yEtMAlzXhb3egPbeInGYLvSXugrQwPnmt-7BFoav~Neu~6yQs41QKQjexZRLCi5p4jRgVzNHWjPFLHQr1aAiW-zkLP0GT9VK8e7muAzNOLKQMgwcK7AcOzsxeB0TjmVCVeeA__"
@@ -251,7 +309,7 @@
                   <h6>Finance & Investment Elite Social Mixer @Lujiazui</h6>
                   <div
                     class="dropdown"
-                    style="background-color: lightgrey; border-radius: 5px"
+                    style="background-color: #EDEEF0; border-radius: 5px"
                   >
                     <button
                       class="btn"
@@ -292,7 +350,7 @@
                     width: 100%;
                     height: 38px;
                     background-color: #ffff;
-                    color: red;
+                    color: #E56135;
                     margin-top: 10px;
                     font-size: 13px;
                   "
@@ -312,15 +370,16 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="data-container container my-3">
+          <div class="data-container my-3">
             <div class="card">
               <div class="card-body">
                 <p class="text-black">💼️ Job</p>
@@ -329,7 +388,7 @@
                   <h6>Software Developer</h6>
                   <div
                     class="dropdown"
-                    style="background-color: lightgrey; border-radius: 5px"
+                    style="background-color: #EDEEF0; border-radius: 5px"
                   >
                     <button
                       class="btn"
@@ -370,12 +429,12 @@
                     width: 100%;
                     height: 38px;
                     background-color: #ffff;
-                    color: red;
+                    color: #02B875;
                     margin-top: 10px;
                     font-size: 13px;
                   "
                 >
-                  Visit Website
+                Apply on Timesjobs
                 </button>
               </div>
 
@@ -390,8 +449,9 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>

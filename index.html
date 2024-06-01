@@ -21,11 +21,13 @@
   </head>
   <body>
 
+    <!-- Navbar starts -->
+    
     <nav class="navbar navbar-expand-lg" style="height: 72px">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./logo-S2lIhR8K.svg" alt="logo"
-        /></a>
+        <a class="navbar-brand" href="#">
+          <img src="./logo-S2lIhR8K.svg" alt="logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,31 +53,28 @@
           </div>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <span class="d-flex gap-2">
-                Create account
-                <span
-                  ><a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#createAccountModal"
-                    >It's free!</a
-                  ></span
-                >
+              <span class="user">
                 <div class="dropdown">
+                  <span>
+                    Create account. <a href="#" data-bs-toggle="modal"
+                    data-bs-target="#createAccountModal">It's free!</a>
+                  </span>
                   <button
                     class="btn py-0 dropdown-toggle"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   ></button>
-                  <ul class="dropdown-menu" style="margin-left: -120px">
+                  <ul class="dropdown-menu dropdown-menu-end">
                     <li>
                       <a class="dropdown-item" href="./index1.html">Max</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Action</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Somthing else</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else</a>
+                    </li>
                   </ul>
                 </div>
               </span>
@@ -84,9 +83,11 @@
         </div>
       </div>
     </nav>
+
     <!-- Navbar ends -->
 
-    <!-- Create Account Modal -->
+    <!-- Register Modal starts -->
+
     <div
       class="modal fade"
       id="createAccountModal"
@@ -203,6 +204,9 @@
       </div>
     </div>
 
+    <!-- Register Modal ends -->
+
+    <!-- SignIn Modal starts -->
 
     <div
       class="modal fade"
@@ -288,8 +292,7 @@
       </div>
     </div>
 
-    
-    <!-- Modal ends -->
+    <!-- SignIn Modal ends -->
 
     <!-- Navbar ends -->
 
@@ -358,7 +361,7 @@
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style="border: 1px solid grey"
+            style="border: 1px solid #EDEEF0; background-color: #EDEEF0;"
           >
             Filter: All
           </button>
@@ -393,18 +396,19 @@
               </div>
 
               <div class="image-cont">
-                <div>
+                <div class="pb-3">
                   <img
                     src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
-                    style="width: 48px; height: 48px"
+                    style="width: 48px; height: 48px;"
                     alt=""
                   />
                   Sarthak Kamra
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>
@@ -433,7 +437,7 @@
               </div>
 
               <div class="image-cont">
-                <div>
+                <div class="pb-3">
                   <img
                     src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
                     style="width: 48px; height: 48px"
@@ -443,8 +447,9 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>
@@ -467,7 +472,7 @@
                   <h6>Finance & Investment Elite Social Mixer @Lujiazui</h6>
                   <div
                     class="dropdown"
-                    style="background-color: lightgrey; border-radius: 5px"
+                    style="background-color: #EDEEF0; border-radius: 5px"
                   >
                     <button
                       class="btn"
@@ -492,11 +497,11 @@
                 </div>
 
                 <div>
-                  <span
+                  <span style="font-size: 15px;"
                     ><i class="fa-solid fa-calendar-days"></i>&nbsp;Fri, 12 Oct,
                     2018</span
                   >
-                  <span style="margin-left: 20px"
+                  <span style="margin-left: 20px; font-size: 15px;"
                     ><i class="fa-solid fa-location-dot"></i>&nbsp;Ahmedabad,
                     India</span
                   >
@@ -508,7 +513,7 @@
                     width: 100%;
                     height: 38px;
                     background-color: #ffff;
-                    color: red;
+                    color: #E56135;
                     margin-top: 10px;
                     font-size: 13px;
                   "
@@ -518,7 +523,7 @@
               </div>
 
               <div class="image-cont">
-                <div>
+                <div class="pb-3">
                   <img
                     src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
                     style="width: 48px; height: 48px"
@@ -528,8 +533,9 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>
@@ -545,7 +551,7 @@
                   <h6>Software Developer</h6>
                   <div
                     class="dropdown"
-                    style="background-color: lightgrey; border-radius: 5px"
+                    style="background-color: #EDEEF0; border-radius: 5px"
                   >
                     <button
                       class="btn"
@@ -570,11 +576,11 @@
                 </div>
 
                 <div>
-                  <span
+                  <span style="font-size: 15px;"
                     ><i class="fa-solid fa-suitcase"></i>&nbsp;Innovaccer
                     Analytics Private Ltd.</span
                   >
-                  <span style="margin-left: 20px"
+                  <span style="margin-left: 20px; font-size: 15px;"
                     ><i class="fa-solid fa-location-dot"></i>&nbsp;Noida,
                     India</span
                   >
@@ -586,17 +592,17 @@
                     width: 100%;
                     height: 38px;
                     background-color: #ffff;
-                    color: red;
+                    color: #02B875;
                     margin-top: 10px;
                     font-size: 13px;
                   "
                 >
-                  Visit Website
+                Apply on Timesjobs
                 </button>
               </div>
 
               <div class="image-cont">
-                <div>
+                <div class="pb-3">
                   <img
                     src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
                     style="width: 48px; height: 48px"
@@ -606,8 +612,9 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <i class="fa-regular fa-eye"></i> &nbsp;1.4k views
-                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
+                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
+                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
                   </p>
                 </div>
               </div>
