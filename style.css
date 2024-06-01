@@ -180,6 +180,14 @@ p {
     z-index: 10;
   }
 
+  .modal-close-btn {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
+
   .location {
     display: none;
   }
