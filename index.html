@@ -17,12 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Template</title>
+    <title>UI-task</title>
   </head>
   <body>
-
     <!-- Navbar starts -->
-    
+
     <nav class="navbar navbar-expand-lg" style="height: 72px">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -39,7 +38,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-light bg-white navbar-collapse" id="navbarContent">
+        <div
+          class="collapse navbar-light bg-white navbar-collapse"
+          id="navbarContent"
+        >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
           <div class="navbar-center">
             <form class="d-flex my-2 my-lg-0 rounded form">
@@ -56,8 +58,13 @@
               <span class="user">
                 <div class="dropdown">
                   <span>
-                    Create account. <a href="#" data-bs-toggle="modal"
-                    data-bs-target="#createAccountModal">It's free!</a>
+                    Create account.
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#createAccountModal"
+                      >It's free!</a
+                    >
                   </span>
                   <button
                     class="btn py-0 dropdown-toggle"
@@ -84,8 +91,6 @@
       </div>
     </nav>
 
-    <!-- Navbar ends -->
-
     <!-- Register Modal starts -->
 
     <div
@@ -96,15 +101,17 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
+        <div class="modal-content positon-relative">
+          <button type="button" class="btn-close modal-close-btn bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
           <div
             class="modal-header d-flex justify-content-center align-items-center"
             style="background-color: #effff4"
           >
-            <h5 style="font-size: 14px">
+            <h5 class="title" style="font-size: 14px;">
               Let's learn, share & inspire each other with our passion for
               computer engineering. Sign up now 🤘🏼
             </h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="login-model d-flex gap-5 justify-content-between">
@@ -120,6 +127,7 @@
                           class="form-control"
                           id="username"
                           required
+                          style="background-color: #F7F8FA;"
                         />
                       </div>
                       <div class="mb-0">
@@ -129,6 +137,7 @@
                           class="form-control"
                           id="username"
                           required
+                          style="background-color: #F7F8FA;"
                         />
                       </div>
                     </div>
@@ -139,6 +148,7 @@
                         class="form-control"
                         id="email"
                         required
+                        style="background-color: #F7F8FA;"
                       />
                     </div>
                     <div class="mb-0">
@@ -147,6 +157,7 @@
                         placeholder="Password"
                         class="form-control"
                         required
+                        style="background-color: #F7F8FA;"
                       />
                     </div>
                     <div class="mb-3">
@@ -155,6 +166,7 @@
                         placeholder="Confirm Password"
                         class="form-control"
                         required
+                        style="background-color: #F7F8FA;"
                       />
                     </div>
                     <button
@@ -167,11 +179,17 @@
                 </div>
 
                 <div class="my-3">
-                  <button class="my-3 w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                  <button
+                    class="my-3 w-100 p-1"
+                    style="background-color: white; border: 1px solid grey"
+                  >
                     <i class="fa-brands fa-facebook"></i> Sign up with Facebook
                   </button>
                   <br />
-                  <button class="w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                  <button
+                    class="w-100 p-1"
+                    style="background-color: white; border: 1px solid grey"
+                  >
                     <i class="fa-brands fa-google"></i> Sign up with Google
                   </button>
                 </div>
@@ -192,15 +210,14 @@
                   alt=""
                   style="width: 320px; height: 320px"
                 />
-                <span style="font-size: 11px; color: grey"
-                  >By signing up, you agree to our Terms & conditions, Privacy
+                <span style="font-size: 11px; color: grey;"
+                  >Signing up,you agree to our Terms & conditions,Privacy
                   policy</span
                 >
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
 
@@ -217,14 +234,16 @@
     >
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
+          <button type="button" class="btn-close modal-close-btn bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
           <div
-            class="modal-header d-flex justify-content-center align-items-center"
+            class="modal-header title d-flex justify-content-center align-items-center"
             style="background-color: #effff4"
           >
-            <h5 style="font-size: 14px">
+            <h5 class="title" style="font-size: 14px">
               Let's learn, share & inspire each other with our passion for
               computer engineering. Sign up now 🤘🏼
             </h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="register-model d-flex gap-5 justify-content-between">
@@ -237,7 +256,7 @@
                         type="email"
                         placeholder="Email"
                         class="form-control"
-                        
+                        style="background-color: #F7F8FA;"
                       />
                     </div>
                     <div class="mb-3">
@@ -245,28 +264,43 @@
                         type="password"
                         placeholder="Password"
                         class="form-control"
-                        
+                        style="background-color: #F7F8FA;"
                       />
                     </div>
                     <button
                       type="submit"
                       class="btn btn-primary w-100 rounded-pill"
                     >
-                      <a href="./index1.html" style="text-decoration: none; color: white;">Sign In</a>
+                      <a
+                        href="./index1.html"
+                        style="text-decoration: none; color: white"
+                        >Welcome back!</a
+                      >
                     </button>
                   </form>
                 </div>
 
                 <div class="my-3">
-                  <button class="my-3 w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                  <button
+                    class="my-3 w-100 p-1"
+                    style="background-color: white; border: 1px solid grey"
+                  >
                     <i class="fa-brands fa-facebook"></i> Sign up with Facebook
                   </button>
                   <br />
-                  <button class="w-100 p-1" style="background-color: white; border: 1px solid grey;">
+                  <button
+                    class="w-100 p-1"
+                    style="background-color: white; border: 1px solid grey"
+                  >
                     <i class="fa-brands fa-google"></i> Sign up with Google
                   </button>
 
-                  <p class="text-black text-center my-3" style="font-size: 12px;">Forgot Password?</p>
+                  <p
+                    class="text-black text-center my-3"
+                    style="font-size: 12px"
+                  >
+                    Forgot Password?
+                  </p>
                 </div>
               </div>
 
@@ -361,7 +395,7 @@
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style="border: 1px solid #EDEEF0; background-color: #EDEEF0;"
+            style="border: 1px solid #edeef0; background-color: #edeef0"
           >
             Filter: All
           </button>
@@ -372,6 +406,8 @@
           </ul>
         </div>
       </div>
+
+      <!-- Cards starts -->
 
       <div class="d-flex gap-5">
         <div>
@@ -399,16 +435,32 @@
                 <div class="pb-3">
                   <img
                     src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
-                    style="width: 48px; height: 48px;"
+                    style="width: 48px; height: 48px"
                     alt=""
                   />
                   Sarthak Kamra
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
-                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
-                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
+                    <span class="views"
+                      ><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span
+                    >
+                    <span
+                      class="share"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i
+                    ></span>
+                    <span
+                      class="share1"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i> Share</span
+                    >
                   </p>
                 </div>
               </div>
@@ -447,9 +499,25 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
-                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
-                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
+                    <span class="views"
+                      ><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span
+                    >
+                    <span
+                      class="share"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i
+                    ></span>
+                    <span
+                      class="share1"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i> Share</span
+                    >
                   </p>
                 </div>
               </div>
@@ -472,7 +540,7 @@
                   <h6>Finance & Investment Elite Social Mixer @Lujiazui</h6>
                   <div
                     class="dropdown"
-                    style="background-color: #EDEEF0; border-radius: 5px"
+                    style="background-color: #edeef0; border-radius: 5px"
                   >
                     <button
                       class="btn"
@@ -497,11 +565,11 @@
                 </div>
 
                 <div>
-                  <span style="font-size: 15px;"
+                  <span style="font-size: 15px"
                     ><i class="fa-solid fa-calendar-days"></i>&nbsp;Fri, 12 Oct,
                     2018</span
                   >
-                  <span style="margin-left: 20px; font-size: 15px;"
+                  <span style="margin-left: 20px; font-size: 15px"
                     ><i class="fa-solid fa-location-dot"></i>&nbsp;Ahmedabad,
                     India</span
                   >
@@ -513,7 +581,7 @@
                     width: 100%;
                     height: 38px;
                     background-color: #ffff;
-                    color: #E56135;
+                    color: #e56135;
                     margin-top: 10px;
                     font-size: 13px;
                   "
@@ -533,9 +601,25 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
-                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
-                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
+                    <span class="views"
+                      ><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span
+                    >
+                    <span
+                      class="share"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i
+                    ></span>
+                    <span
+                      class="share1"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i> Share</span
+                    >
                   </p>
                 </div>
               </div>
@@ -551,7 +635,7 @@
                   <h6>Software Developer</h6>
                   <div
                     class="dropdown"
-                    style="background-color: #EDEEF0; border-radius: 5px"
+                    style="background-color: #edeef0; border-radius: 5px"
                   >
                     <button
                       class="btn"
@@ -576,11 +660,11 @@
                 </div>
 
                 <div>
-                  <span style="font-size: 15px;"
+                  <span style="font-size: 15px"
                     ><i class="fa-solid fa-suitcase"></i>&nbsp;Innovaccer
                     Analytics Private Ltd.</span
                   >
-                  <span style="margin-left: 20px; font-size: 15px;"
+                  <span style="margin-left: 20px; font-size: 15px"
                     ><i class="fa-solid fa-location-dot"></i>&nbsp;Noida,
                     India</span
                   >
@@ -592,12 +676,12 @@
                     width: 100%;
                     height: 38px;
                     background-color: #ffff;
-                    color: #02B875;
+                    color: #02b875;
                     margin-top: 10px;
                     font-size: 13px;
                   "
                 >
-                Apply on Timesjobs
+                  Apply on Timesjobs
                 </button>
               </div>
 
@@ -612,15 +696,33 @@
                 </div>
                 <div class="d-flex pe-3 align-items-center">
                   <p class="text-black">
-                    <span class="views"><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span>
-                    <span class="share" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i></span>
-                    <span class="share1" style="background-color: #EDEEF0; padding: 10px 15px 10px 15px;"><i class="fa-solid fa-share-nodes"></i> Share</span>
+                    <span class="views"
+                      ><i class="fa-regular fa-eye"></i> &nbsp;1.4k views</span
+                    >
+                    <span
+                      class="share"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i
+                    ></span>
+                    <span
+                      class="share1"
+                      style="
+                        background-color: #edeef0;
+                        padding: 10px 15px 10px 15px;
+                      "
+                      ><i class="fa-solid fa-share-nodes"></i> Share</span
+                    >
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Cards ends -->
 
         <div class="location">
           <div class="d-flex justify-content-between">
